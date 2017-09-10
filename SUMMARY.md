@@ -13,7 +13,7 @@
   * [Create Move Files](01_basics/create_move_files_in_terminal.md)
   * [Command Line Lab](01_basics/commandLineLab.md)
   * [Homework Command Line](01_basics/ah_star_wars_cli.md)
-* [Intro to the Front End](README.md)
+<!-- * [Intro to the Front End](README.md)
   * [Reintroduction HTML & CSS](01_basics/reintroduction_html_css.md)
   * [JS DataTypes](02_front_end/dataTypes.md)
   * [Control Flow](02_front_end/controlFlow.md)
@@ -61,6 +61,6 @@
 * [Project 2](06_Express_Models/Project2.md)
   * [Partners](06_Express_Models/projectGroups.md)
   * [Git Exercise](06_Express_Models/gitExercise.md)
-  * [Git Workflow](06_Express_Models/gitWorkFlow.md)
+  * [Git Workflow](06_Express_Models/gitWorkFlow.md) -->
   
 

@@ -2,8 +2,7 @@
 
 
 ### Holidays
-- May 29
-- July 3
-- July 4
+- Nov 23, 24 
+
 
 
