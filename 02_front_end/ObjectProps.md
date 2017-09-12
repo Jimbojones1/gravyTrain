@@ -8,7 +8,7 @@
 
 *Example:*
 ```javascript
-var obj = {
+const obj = {
   kittens: 'aww';
 };
 obj.hasOwnProperty('kittens'); // true
@@ -21,7 +21,7 @@ obj.hasOwnProperty('kittens'); // true
 
 *Example:*
 ```javascript
-var obj = {
+const obj = {
   kittens: 'aww',
   puppies: 'adorable'
 };

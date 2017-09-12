@@ -22,7 +22,7 @@ Once a function is defined you need to call it. To call a named function you jus
 
 ```js
 // Call addNumbers function
-var result = addNumbers(2, 2);
+const result = addNumbers(2, 2);
 ```
 
 The above will store the result of `addNumbers` to the variable `result`. It is common to store the return values of functions in a variable so you don't have to run the function each time you need to get it's return value.

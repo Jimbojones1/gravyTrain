@@ -20,7 +20,7 @@ __Hint:__ Remember, this is an array of objects. This means you'll need to use b
 This is the array of objects you'll need to work with:
 
 ```js
-var tagMap = [
+const tagMap = [
   {
     "MapTagID":1,
     "MapParentID":0,

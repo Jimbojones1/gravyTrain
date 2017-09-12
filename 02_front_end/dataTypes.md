@@ -233,7 +233,7 @@ The main note to make here is that these variables should always have the `var` 
 Values are assigned using `=`, and there are also compound assignment statements such as `+=` and `-=`:
 
 ```javascript
-var x = 1;
+const x = 1;
 => 1
 
 x += 5
@@ -276,7 +276,7 @@ Arrays, ultimately, are a data structure that is similar in concept to a list. E
 
 
 ```javascript
-var friends = ['Moe', 'Larry', 'Curly'];
+const friends = ['Moe', 'Larry', 'Curly'];
 => ['Moe', 'Larry', 'Curly']
 ```
 
@@ -284,17 +284,17 @@ Items in an array are stored in sequential order, and indexed starting at `0` an
 
 ```javascript
 // First friend
-var firstFriend = friends[0];
+const firstFriend = friends[0];
  => 'Moe'
 // Get the last friend
-var lastFriend = friends[2]
+const lastFriend = friends[2]
 => 'Curly'
 ```
 
 We can even use strings like arrays:
 
 ```javascript
-var friend = "bobby bottleservice";
+const friend = "bobby bottleservice";
 // pick out first character
 friend[0]
 //=> 'b'
@@ -307,7 +307,7 @@ friend.length
 Using the JavaScript Keyword `new`, is one way of creating arrays:
 
 ```javascript
-var a = new Array();
+const a = new Array();
 => undefined
 
 a[0] = "dog";
@@ -329,7 +329,7 @@ a.length;
 A more convenient notation is to use an array literal:
 
 ```javascript
-var a = ["dog", "cat", "hen"];
+const a = ["dog", "cat", "hen"];
 
 a.length;
 => 3
@@ -342,7 +342,7 @@ The `length` method works in an interesting way in Javascript. It is always one 
 So `array.length` isn't necessarily the number of items in the array. Consider the following:
 
 ```javascript
-var a = ["dog", "cat", "hen"];
+const a = ["dog", "cat", "hen"];
 a[100] = "fox";
 a.length; // 101
 ```
@@ -354,7 +354,7 @@ a.length; // 101
 If you query a non-existent array index, you get `undefined`:
 
 ```javascript
-var a = ["dog", "cat", "hen"];
+const a = ["dog", "cat", "hen"];
 => undefined
 
 typeof a[90];
@@ -390,8 +390,8 @@ Iterating through the elements of an array, one at a time, is a very common prac
 We can use a `for` loop to iterate over the elements of an array like this:
 
 ```javascript
-var teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
-for (var i = 0; i < teams.length; i++) {
+const teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
+for (let i = 0; i < teams.length; i++) {
   console.log(teams[i]);
 }
 ```
@@ -403,8 +403,8 @@ Several of these methods require a function be supplied as an argument, and the 
 As an example, lets look at the `forEach` method that we can use instead of a `for` loop to iterate the elements:
 
 ```javascript
-var teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
-teams.forEach(function(el) {
+const teams = ['Bruins', 'Cal Bears', 'Ravens', 'Ducks'];
+teams.forEach((el) => {
     console.log(el);
 });
 ```

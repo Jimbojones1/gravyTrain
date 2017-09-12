@@ -12,7 +12,7 @@ This page shows examples of how to declare and use variables in Javascript.
 ##Discussion
 
 - **Declaring variables**:
-  `var myVariable = ["item", 2, 4, "stuff"];`
+  `const myVariable = ["item", 2, 4, "stuff"];`
 
 - **Data types**:
   - string: `"stuff"`
@@ -27,11 +27,11 @@ This page shows examples of how to declare and use variables in Javascript.
 
 ##Examples
 
-- String: `var myString = 'hello';`
-- integer: `var myInt = 42;`
-- float: `var myFloat = 3.14;`
-- bool: `var myBool = false;`
-- array: `var myArray = ["things", "go", "here"];`
+- String: `const myString = 'hello';`
+- integer: `const myInt = 42;`
+- float: `const myFloat = 3.14;`
+- bool: `let myBool = false;`
+- array: `const myArray = ["things", "go", "here"];`
 
 ## References
 

@@ -35,5 +35,5 @@ Expected Output :
 5.  Write a JavaScript program which accept a number as input and insert dashes (-) between each two even numbers. For example if you accept 025468 the output should be 0-254-6-8.
 
 6. Write a JavaScript program to find the most frequent item of an array. 
-Sample array : ```var arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];```
+Sample array : ```const arr1=[3, 'a', 'a', 'a', 2, 3, 'a', 3, 'a', 2, 4, 9, 3];```
 Sample Output : a ( 5 times ) 

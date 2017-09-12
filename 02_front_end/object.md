@@ -6,7 +6,7 @@
 4.  `"weber"`
 
 ```
-var instruments = {
+const instruments = {
   banjo: ["1920 gibson", "deering", "washburn"],
   guitar: {
     acoustic: ["martin", "taylor", "santa cruz", "gibson"],
@@ -27,7 +27,7 @@ a list of your favourite singers.
 ---
 
 ```
-var crazyObject = {
+const crazyObject = {
   taco: [{meat: 'steak',
          cheese: ['panela', 'queso', 'chihuahua']},
          {meat: 'chicken',

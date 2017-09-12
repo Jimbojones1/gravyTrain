@@ -6,8 +6,8 @@ Below is a sample HTML page with a canvas element that will draw a rectangle.
   <canvas id='myCanvas' width='400' height='400'></canvas>
 
   <script>
-    var canvas = document.getElementById('myCanvas');
-    var ctx = canvas.getContext('2d');
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
 
     ctx.fillRect(0, 200, 20, 10);
 
@@ -20,8 +20,8 @@ Below is a sample HTML page with a canvas element that will draw a rectangle.
 
 When you begin drawing an item, remember that you need to `beginPath(x, y);` and then `ctx.fill();` finish filling in the drawing. Any code you want to use to draw should go inbetween these functions.
 ```javascript
-var canvas = document.getElementById('myCanvas');
-var ctx = canvas.getContext('2d');
+const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
 ctx.beginPath(0, 0);
 // draw some other paths and such
 // then end it

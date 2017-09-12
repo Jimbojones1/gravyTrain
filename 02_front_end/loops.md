@@ -11,8 +11,8 @@ Arrays are lists of values. An array can contain *any* type of value including o
 You can create new arrays that are empty or have content by default. Both of these examples are valid ways to create a new array:
 
 ```js
-var emptyArray = []; // A new, empty array
-var myArray    = ['Horses', 'Cows', 'Pigs', 'Sheep']; // Array with items in it
+const emptyArray = []; // A new, empty array
+const myArray    = ['Horses', 'Cows', 'Pigs', 'Sheep']; // Array with items in it
 ```
 
 ### Methods on the Array Object
@@ -40,9 +40,9 @@ __Example__
 In this example we lower-case all of the values in the array and create a new, all lower-cased animals array.
 
 ```js
-var animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
+const animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
 
-var lowerCaseAnimals = animals.map(function(value, index) {
+const lowerCaseAnimals = animals.map(function(value, index) {
   return value.toLowerCase(); // toLowerCase() is a string method native to JavaScript
 });
 
@@ -61,11 +61,11 @@ __Example__
 Here we're going to create a new array of only even numbers from another array of mixed numbers. We'll use filter to only keep evens.
 
 ```js
-var numbers = [1, 2, 3, 4, 5, 6];
+const numbers = [1, 2, 3, 4, 5, 6];
 
 // Because filter does not change the original array we have to store it's return 
 // value in another variable OR we can redefine the original numbers array
-var evens = numbers.filter(function(value, index) {
+const evens = numbers.filter(function(value, index) {
   return value % 2 === 0; // This says if value divided by 2 has no remainder then return true, otherwise false
 });
 
@@ -77,7 +77,7 @@ console.log(numbers, evens);
 
 Arrays are a data type you will want to loop over at some point. The reason loops exist is so that you can easily retrieve or change the values of an array using a block of code instead of having to individually grab each array value by it's index. And what if you don't know how many items are in the array? In these cases a loop is a great way to work on all the values in an array no matter what it contains or how long or short it may be.
 
-Most loops use "iterators". These are variables that contain a number and are used to count how many times the loop has run. Iterators are commonly started at 0 or 1. The common practice for loops is to name their iterators `i` (as in `var i = 0;`).
+Most loops use "iterators". These are variables that contain a number and are used to count how many times the loop has run. Iterators are commonly started at 0 or 1. The common practice for loops is to name their iterators `i` (as in `let i = 0;`).
 
 Incrementing the iterator is essential to making sure some loop types run. We use the increment operator for this purpose (`i++`).
 
@@ -93,11 +93,11 @@ This example basically says "while `i` is less than or equal to the length of th
 
 ```js
 // This is our array
-var animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
+const animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
 
-var i = 0; // This is our iterator (it is in the global scope)
+let i = 0; // This is our iterator (it is in the global scope)
 while (i <= animals.length - 1) { // We subtract 1 from the animal var's length to account for array indexes starting at 0
-  var currentAnimal = animals[i]; // The incrementer is used to access the array at an index number
+  const currentAnimal = animals[i]; // The incrementer is used to access the array at an index number
   console.log('The current animal is: ' + currentAnimal); // Outputs the current animal to the screen
 
   i++; // We MUST increment 'i' otherwise we will always be accessing the same index in the array
@@ -112,10 +112,10 @@ The `for` loop improves on the `while` loop. The `for` loop forces you to rememb
 __Example__
 
 ```js
-var animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
+const animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
 
-for(var i = 0; i <= animals.length - 1; i++) { // 'for' forces you to define an iterator, expression, and increment all in one line
-  var currentAnimal = animals[i];
+for(let i = 0; i <= animals.length - 1; i++) { // 'for' forces you to define an iterator, expression, and increment all in one line
+  const currentAnimal = animals[i];
   console.log('The current animal is ' + currentAnimal + ' at index ' + i);
 }
 
@@ -134,7 +134,7 @@ __Example__
 In this example we're going to output the values of an array just like we have for the other loop types except this one will be clean and short.
 
 ```js
-var animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
+const animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
 
 animals.forEach(function(animal, i) {
   console.log('The current animal is ' + animal + '. It has an index number of ' + i);
@@ -152,15 +152,15 @@ __Example__
 Here we will create an object that describes a person and then loop over that person object's keys and get the values associated with it. It will log the keys and values to the console.
 
 ```js
-var person = {
+const person = {
   height: 'tall',
   sex: 'female',
   hairColor: 'brown',
   eyeColor: 'blue'
 };
 
-for (var prop in person) {
-  var value = person[prop];
+for (const prop in person) {
+  const value = person[prop];
   console.log('This person has a ' + prop + ' of ' + value);
 }
 ```
