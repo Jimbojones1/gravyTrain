@@ -14,4 +14,8 @@
   * [Homework Command Line](01_basics/ah_star_wars_cli.md)
 * [Javascript week 1]
   * [loop lab](02_front_end/loopLab.md)
-  * []
+  * [arrays ](02_front_end/arrays.md)
+  * [templates ](02_front_end/concatination.md)
+  * [data types](02_front_end/dataTypes.md)
+  * [loops](02_front_end/loops.md)
+  * [variables](02_front_end/variables.md)

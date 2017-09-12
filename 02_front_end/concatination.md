@@ -16,4 +16,11 @@ const myStory = "hey guys, how is it going? I hope " +
 console.log(myStory);
 ```
 
+## Interpolation
 
+```
+const name = 'jim'
+
+const template = `Hey ${name}, whats up?`
+
+```
