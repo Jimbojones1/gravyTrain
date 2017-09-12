@@ -9,7 +9,7 @@ ___
 
 ```javascript
 // if you need to create a long string, you can:
-var myStory = "hey guys, how is it going? I hope " +
+const myStory = "hey guys, how is it going? I hope " +
     "you are enjoying today's WDI!" +
     " Cheers, all.";
 

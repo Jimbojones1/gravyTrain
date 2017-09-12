@@ -2,14 +2,14 @@
 
 #### Declare a DOM Element to bind to (using a selector)
 
-`var body = document.getElementsByTagName('body')[0];`
+`const body = document.getElementsByTagName('body')[0];`
 
 #### We need to add a listener for events to an element
 
 ###### Mouse events
 
 ```javascript
-body.addEventListener('click', function(event) {
+body.addEventListener('click', (event) => {
   console.log(event);
   console.log('ow, y u click me bro?');
 });
@@ -20,7 +20,7 @@ body.addEventListener('click', function(event) {
 ###### Touch events
 
 ```javascript
-body.addEventListener('touchstart', function(event) {
+body.addEventListener('touchstart', (event) => {
   // console.log(event);
   // touchstart
   // touchmove
@@ -34,7 +34,7 @@ body.addEventListener('touchstart', function(event) {
 #### Keyboard events
 
 ```javascript
-body.addEventListener('keyup', function(event) {
+body.addEventListener('keyup', (event) => {
   // look for specific keys to be pressed
   if (event.keyCode == 13) {
     console.log('y u press enter so much yo?');

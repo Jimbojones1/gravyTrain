@@ -20,9 +20,9 @@ Statements meant to be executed after a control flow operation will be grouped i
 We've seen that the scope in JavaScript changes often. In the case of **block statements**, there is no scope created.
 
 ```
-var name = "james";
+let name = "james";
 {
-  var name = "adriana";
+  let name = "adriana";
 }
 console.log(x); // outputs gerry
 ```
@@ -47,7 +47,7 @@ if (1 > 0) { console.log("hi") }
 When you need to test more than one case, you may use `else if`:
 
 ```javascript
-var name = "kittens";
+let name = "kittens";
 if (name == "puppies") {
   name += "!";
 } else if (name == "kittens") {
@@ -91,7 +91,7 @@ if (x = 3) {
 Do not confuse the primitive boolean values `true` and `false` with the true and false values of the Boolean object. For example:
 
 ```javascript
-var b = new Boolean(false);
+let b = new Boolean(false);
 if (b) { console.log("true") }
 //=> true
 ```
@@ -182,7 +182,7 @@ The `!` takes a value and returns the opposite boolean value, i.e.
 The `&&` and `||` operators use short-circuit logic, which means whether they will execute their second operand is dependent on the first. This is useful for checking for null objects before accessing their attributes:
 
 ```javascript
-var name = o && o.getName();
+const name = o && o.getName();
 ```
 
 In this case, if the first operand `o` is false, then the second operand `o.getName()` will not be evaluated. The expression is basically saying "we already know the whole `&&` expression is false, because `o` is falsey. Why bother dealing with the second operand?"
@@ -190,7 +190,7 @@ In this case, if the first operand `o` is false, then the second operand `o.getN
 Or for setting default values:
 
 ```javascript
-var name = otherName || o.getName();
+const name = otherName || o.getName();
 ```
 
 In this case, if the first operand `otherName` is false, then we'll see that `"my name"` will be returned. If othername is truthy (e.g. it contains a value), it will get returned, and the second expression won't even be evaluated. The expression is basically saying "we already know the whole `||` expression is true, because `o` is truthy. Why bother dealing with the second operand?"
@@ -264,7 +264,7 @@ However, there are some incidents when it does not do what we expect, for exampl
 The switch statement can be used for multiple branches based on a number or string:
 
 ```javascript
-var food = "apple";
+let food = "apple";
 
 switch(food) {
   case 'pear':
@@ -292,8 +292,8 @@ Iterating is a way of incrementally repeating a task.
 You can iterate over an array with:
 
 ```javascript
-var a = [1, 2, 3, 4, 5];
-for (var i = 0; i < a.length; i++) {
+const a = [1, 2, 3, 4, 5];
+for (let i = 0; i < a.length; i++) {
   console.log(i);
 }
 ```
@@ -301,8 +301,8 @@ for (var i = 0; i < a.length; i++) {
 This is slightly inefficient as you are looking up the length property once every loop. An improvement is to chain the `var` assignment:
 
 ```javascript
-var a = [1, 2, 3, 4, 5];
-for (var i = 0, len = a.length; i < len; i++) {
+const a = [1, 2, 3, 4, 5];
+for (let i = 0, len = a.length; i < len; i++) {
   console.log(i);
 }
 ```

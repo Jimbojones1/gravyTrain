@@ -5,7 +5,7 @@
 
 ```javascript
 
-var err = {
+const err = {
   name: 'Error',
   sayMyName: function() {
     return 'I am ' + this.name;
@@ -15,7 +15,7 @@ var err = {
   },
   changeName: function(newName) {
     if (typeof(newName) == 'string') {
-      var oldName = this.name;
+      const oldName = this.name;
       this.name = newName;
       return 'Name has been changed to: ' + newName + ' and our old name was ' + oldName;
     } else {
