@@ -9,7 +9,7 @@
 ``` 
   // first grab the body, we use the [0] at the end because
   // getElementsByTagName method returns an array
-  var body = document.getElementByTagName('body')[0];
+  const body = document.getElementByTagName('body')[0];
 
   body.style.backgroundColor = "blue";
   //  when you press enter the page should turn blue
@@ -17,7 +17,7 @@
 
   // next lets create an element to 'append' to the body
   // first create the object/ element
-  var obj = document.createElement('div')
+  const obj = document.createElement('div')
   // now that we created the element lets set 
   // some 'properties'
   obj.style.backgroundColor = 'red';
@@ -34,7 +34,7 @@
 
 #### Creating Selectors
 
-- `var selector = document.getElementById("news");`
+- `const selector = document.getElementById("news");`
 - Getting by **Ids** (unique) and **Classes** (meant for re-use):
 -  `document.getElementById("my-id");`
   - returns an single item.
@@ -56,13 +56,13 @@
 // basic selectors
 // declare a selector named container
 // access that container via document.getElementById('name-of'id)
-var container = document.getElementById('container');
+const container = document.getElementById('container');
 console.log(container);
-var monsters = ['Wreck-it Ralph', 'The giraffe from Lion King SNES', 'Ganon'];
+const monsters = ['Wreck-it Ralph', 'The giraffe from Lion King SNES', 'Ganon'];
 
-for (var baddie in monsters) {
+for (const baddie in monsters) {
   // create a new dom element using document.createElement('name-of-tag');
-  var li = document.createElement('li');
+  const li = document.createElement('li');
   console.log(li);
   // access and assign a property to my dom element
   li.innerHTML = monsters[baddie];
@@ -71,7 +71,7 @@ for (var baddie in monsters) {
 }
 
 // now, we need to create an image!
-var kittenImage = document.createElement('img');
+const kittenImage = document.createElement('img');
 // alt text (alt) - ADA compliancy text for the blind
 kittenImage.alt = 'A cute random kitten';
 kittenImage.id = 'kitten';
