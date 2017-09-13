@@ -14,6 +14,19 @@ This page shows examples of how to declare and use variables in Javascript.
 - **Declaring variables**:
   `const myVariable = ["item", 2, 4, "stuff"];`
 
+- Const declarations are immutable
+```
+const a = 1
+a = 2 --> // error because we are redfining the variable
+```
+
+- let declartions are mutable
+
+```
+let a = 1
+a = 2 --> // a, now returns 2
+```
+
 - **Data types**:
   - string: `"stuff"`
   - integer: `42`
