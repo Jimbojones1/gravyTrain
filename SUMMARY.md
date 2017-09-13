@@ -20,4 +20,7 @@
   * [loops](02_front_end/loops.md)
   * [variables](02_front_end/variables.md)
   * [more loop practice](02_front_end/loopsLab2.md)
+  * [functions](02_front_end/functions.md)
+  * [Homework function practice](02_front_end/BeginnerFunctionPractice.md)
 * [GIT](02_front_end/git.md)
+

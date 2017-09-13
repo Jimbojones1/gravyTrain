@@ -13,7 +13,7 @@ Functions can take one or more arguments. Each argument will change the output o
 This example function just adds two numbers together and returns the result.
 
 ```js
-function addNumbers(a, b) {
+const addNumbers(a, b) => {
   return a + b;
 }
 ```
@@ -21,7 +21,7 @@ function addNumbers(a, b) {
 Once a function is defined you need to call it. To call a named function you just invoke its name with parentheses, filling in any arguments it might require like this:
 
 ```js
-// Call addNumbers function
+// Call/invoking addNumbers function
 const result = addNumbers(2, 2);
 ```
 
