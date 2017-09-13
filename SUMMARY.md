@@ -19,3 +19,4 @@
   * [data types](02_front_end/dataTypes.md)
   * [loops](02_front_end/loops.md)
   * [variables](02_front_end/variables.md)
+  * [more loop practice](02_front_end/loopsLab2.md)
