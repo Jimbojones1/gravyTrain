@@ -42,7 +42,7 @@ In this example we lower-case all of the values in the array and create a new, a
 ```js
 const animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
 
-const lowerCaseAnimals = animals.map(function(value, index) {
+const lowerCaseAnimals = animals.map((value, index) => {
   return value.toLowerCase(); // toLowerCase() is a string method native to JavaScript
 });
 
@@ -65,7 +65,7 @@ const numbers = [1, 2, 3, 4, 5, 6];
 
 // Because filter does not change the original array we have to store it's return 
 // value in another variable OR we can redefine the original numbers array
-const evens = numbers.filter(function(value, index) {
+const evens = numbers.filter((value, index) => {
   return value % 2 === 0; // This says if value divided by 2 has no remainder then return true, otherwise false
 });
 
@@ -136,7 +136,7 @@ In this example we're going to output the values of an array just like we have f
 ```js
 const animals = ['Horses', 'Cows', 'Pigs', 'Sheep'];
 
-animals.forEach(function(animal, i) {
+animals.forEach((animal, i) => {
   console.log('The current animal is ' + animal + '. It has an index number of ' + i);
 });
 
