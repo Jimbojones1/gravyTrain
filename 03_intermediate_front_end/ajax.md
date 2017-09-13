@@ -50,7 +50,7 @@ $.ajax({
   type: "GET",
   dataType: 'json',
   success: function(data) {
-    var data = data;
+    const data = data;
     //console.log(data);
     $('body').append(data.poem);
     //alert("huzzah! we did it guys!");
@@ -64,8 +64,8 @@ $.ajax({
 ### POST examples
 
 ```javascript
- var animal = $("#animalName").val();
-    var sound = $("#animalSound").val();
+ const animal = $("#animalName").val();
+    const sound = $("#animalSound").val();
 
     // alert(animal);
 

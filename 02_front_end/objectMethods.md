@@ -7,13 +7,13 @@
 
 const err = {
   name: 'Error',
-  sayMyName: function() {
+  sayMyName: () => {
     return 'I am ' + this.name;
   },
-  makeFunOfGreenClothes: function() {
+  makeFunOfGreenClothes: () => {
     return "Your clothes look silly, little elf-man";
   },
-  changeName: function(newName) {
+  changeName: (newName) => {
     if (typeof(newName) == 'string') {
       const oldName = this.name;
       this.name = newName;

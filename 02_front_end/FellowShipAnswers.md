@@ -20,7 +20,7 @@ const buddies = [
 const lands = ['The Shire', 'Rivendell', 'Mordor'];
 const body = document.body;
 
-const makeMiddleEarth = function () {
+const makeMiddleEarth = () => {
     // create a section tag with an id of middle-earth
     const middleEarth = document.createElement('section');
     for(let i = 0; i < lands.length; i++) {
@@ -39,7 +39,7 @@ makeMiddleEarth();
 const theShire = body.getElementsByTagName('article')[0];
 const rivendell = body.getElementsByTagName('article')[1];
 const mordor = body.getElementsByTagName('article')[2];
-const makeHobbits = function () {
+const makeHobbits = () => {
   // display an unordered list of hobbits in the shire (which is the first article tag on the page)
   const hobbitList = document.createElement('ul');
   for(let i = 0; i < hobbits.length; i++) {
@@ -55,7 +55,7 @@ makeHobbits();
 
 
 const frodo = body.getElementsByTagName('li')[0];
-const keepItSecretKeepItSafe = function () {
+const keepItSecretKeepItSafe = () => {
   // create a div with an id of 'the-ring'
   const theRing = document.createElement('div');
   theRing.setAttribute('id', 'the-ring');
@@ -86,7 +86,7 @@ makeBuddies();
 
 const strider = rivendell.getElementsByTagName('li')[3];
 
-const beautifulStranger = function () {
+const beautifulStranger = () => {
   // change the 'Strider' textnode to 'Aragorn'
   strider.textContent = 'Aragon';
 }
@@ -94,7 +94,7 @@ beautifulStranger();
 
 
 const hobbits = theShire.getElementsByTagName('ul');
-function leaveTheShire() {
+leaveTheShire() => {
   // assemble the hobbits and move them to Rivendell
   rivendell.appendChild(hobbits[0]);
 }
@@ -103,7 +103,7 @@ leaveTheShire();
 //What is query selector all? Check the docs. 
 const fellowshipMembers = rivendell.querySelectorAll('li');
 
-const forgeTheFellowShip = function () {
+const forgeTheFellowShip = () => {
   // create a new div called 'the-fellowship' within rivendell
   const theFellowship = document.createElement('div');
   theFellowship.setAttribute('id', 'the-fellowship');
@@ -119,7 +119,7 @@ forgeTheFellowShip();
 
 
 const gandalf = fellowshipMembers[0];
-const theBalrog = function () {
+const theBalrog = () => {
   // change the 'Gandalf' textNode to 'Gandalf the White'
   gandalf.textContent = 'Gandalf the White';
   // apply style to the element
@@ -131,7 +131,7 @@ theBalrog();
 
 
 const boromir = fellowshipMembers[4];
-const hornOfGondor = function () {
+const hornOfGondor = () => {
   alert('the horn of gondor has blown');
   // pop up an alert that the horn of gondor has been blown
   boromir.style.textDecoration = 'line-through';
@@ -143,7 +143,7 @@ hornOfGondor();
 
 
 const sam = fellowshipMembers[6];
-const itsDangerousToGoAlone = function () {
+const itsDangerousToGoAlone = () => {
   // take Frodo and Sam out of the fellowship and move them to Mordor
   mordor.appendChild(frodo);
   mordor.appendChild(sam);
@@ -156,7 +156,7 @@ itsDangerousToGoAlone();
 
 
 const gollum, theRing;
-const weWantsIt = function () {
+const weWantsIt = () => {
   // Create a div with an id of 'gollum' and add it to Mordor
   gollum = document.createElement('div');
   gollum.setAttribute('id', 'gollum');
@@ -170,7 +170,7 @@ const weWantsIt = function () {
 weWantsIt();
 
 
-const thereAndBackAgain = function () {
+const thereAndBackAgain = () => {
   gollum.parentElement.removeChild(gollum);
   // remove Gollum and the Ring from the document
   // remove all the baddies from the document
