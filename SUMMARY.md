@@ -22,5 +22,9 @@
   * [more loop practice](02_front_end/loopsLab2.md)
   * [functions](02_front_end/functions.md)
   * [Homework function practice](02_front_end/BeginnerFunctionPractice.md)
+  * [object](02_front_end/object.md)
+  * [ObjectMethods](02_front_end/ObjectMethods.md)
+  * [ObjectProps](02_front_end/ObjectProps.md)
 * [GIT](02_front_end/git.md)
+
 
