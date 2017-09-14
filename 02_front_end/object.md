@@ -75,7 +75,7 @@ const crazyObject = {
 2.  Create an object using bracket notation with five properties and one method that prints something to the screen.
 
 
-## Call the methods that you created in your object.
+
 
 
 
