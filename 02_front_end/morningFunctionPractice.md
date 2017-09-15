@@ -1,5 +1,132 @@
-## Function Practice
+## Function and Object Practice
 
+Given, the following object, log the third element from the array
+
+```javascript
+const fun = {
+    asdf: ["afd", "matt", 'sweet']
+}
+```
+
+Given, the following object, log the elbow property
+
+```javascript
+const body = {
+    arm: {
+        elbow: 'pointy'
+    }
+};
+```
+
+Given, the following object, call the jump method
+
+```javascript
+const person = {
+    jump(){
+        console.log('fly!');
+    }
+};
+```
+
+Create a data structure such that the following code logs the value "blue"
+
+```javascript
+console.log(myList[0].eyeColor);
+```
+
+Create a data structure such that the following code logs the value "buy supplies"
+
+```javascript
+console.log(myArrays[2][4]);
+```
+
+Call the function in the given code:
+
+```javascript
+const awesome = [
+    {
+        asdf:'true'
+    },
+    3456.245,
+    ()=>{
+        console.log('fun');
+    },
+    "buddy"
+];
+```
+
+Loops over the following array, and print its values:
+
+```javascript
+const refrigerator = {
+    fruits: ['apple', 'pear', 'banana']
+}
+```
+
+Use two loops to loop over each array in the given "container" array
+
+```javascript
+const container = [
+    [1,5,7],
+    ['bear', 'dog', 'cat'],
+    [true, false, true]
+];
+```
+
+Create a data structure such that the following logs `4`
+
+```javascript
+console.log(createCar().tires);
+```
+
+Create a data structure such that the following logs `pears`
+
+```javascript
+console.log(generateShoppingList()[3]);
+```
+
+Create a data structure such that the following logs `20lbs`
+
+```javascript
+console.log(createRobot().stats.weight);
+```
+
+Call the drive method
+
+```javascript
+const generateCar = ()=>{
+    return {
+        drive(){
+            console.log("Vroom");
+        }
+    }
+}
+```
+
+
+Log the message attribute
+
+```javascript
+const account = {
+    tweet(){
+        return {
+            message: "fun"
+        }
+    }
+}
+```
+
+Log the second element in the array
+
+```javascript
+const me = {
+    foo(){
+        return {
+            array: [2.5, 7, true]
+        }
+    }
+}
+```
 
 
 1. Write a JavaScript function that will find the largest of five numbers. Display an alert box to show the result. 

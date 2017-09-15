@@ -26,6 +26,7 @@
   * [ObjectMethods](02_front_end/ObjectMethods.md)
   * [ObjectProps](02_front_end/ObjectProps.md)
   * [Homework Css Thursday](02_front_end/shayHowe.md)
+  * [Morning Function Practice](02_front_end/morningFunctionPractice.md)
 * [GIT](02_front_end/git.md)
 
 
