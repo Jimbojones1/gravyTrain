@@ -130,11 +130,11 @@ const me = {
 
 
 1. Write a JavaScript function that will find the largest of five numbers. Display an alert box to show the result. 
-Sample numbers : -5, -2, -6, 0, -1 
+Sample numbers : [-5, -2, -6, 0, -1]
 Output : 0 
 
 2.  Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. 
-Sample numbers : 0, -1, 4 
+Sample numbers : [0, -1, 4 ]
 Output : 4, 0, -1 
 
 3. Write a JavaScript function to get the first element of an array. Passing a parameter 'n' will return the first 'n' elements of the array. 
