@@ -7225,6 +7225,9 @@ Don't be intimidated by the size of this array. Just use your knowledge of loops
 
 <hr />
 
+## DO NOT DO THE FOLLOWING
+
+
 ## Homework
 
 This is tonight's official homework. Be sure to submit it to the homework repository. The exercise above is only an in-class exercise. Do not submit the exercise as homework, only submit this.
