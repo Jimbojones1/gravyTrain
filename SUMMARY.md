@@ -29,6 +29,8 @@
   * [Morning Function & object Practice](02_front_end/morningFunctionPractice.md)
   * [Weekend Homework](02_front_end/LongHomeWorkLoopsFuncsObj.md)
 * [GIT](02_front_end/git.md)
+* [DOM](02_front_end/selector.md)
+  * [disney array lab](02_front_end/wednesday_homework.md)
 
 
 

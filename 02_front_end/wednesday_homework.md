@@ -1,6 +1,4 @@
-# Wednesday Exercises and Homework
-
-> Today and tonight's exercises and homework will reinforce the array concepts combined with how to access the properties of an object two different ways
+# Afternoon Lab
 
 ## In-Class Loop & Object Exercise
 
@@ -9,7 +7,7 @@
 Your job is to write a program that loops over an array of objects. Using the example array below, do the following:
 
 1. Iterate over each item in the array
-2. Filter out all objects where the `Language` property does not equal to `en` (stands for English)
+2. Filter (maybe look up the filter method) out all objects where the `Language` property does not equal to `en` (stands for English)
 3. Loop over the filtered array and...
 4. Output each array item's key and value
 
