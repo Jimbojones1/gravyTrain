@@ -9,11 +9,11 @@ Clone it
 
 ```javascript
 // assign a variable to an NPM library
-var http = require('http');
+const http = require('http');
 
 // http library: create a server, and listen for requests
 // and responses
-http.createServer(function(request, response) {
+http.createServer((request, response) => {
   response.writeHead(200); // status message 200 ok
   response.write('holy f I just built a server'); // send data to server
   response.end(); // stop sending
@@ -27,12 +27,12 @@ console.log('My server is running :)');
 *This example assumes that a data.json file is in the same directory as our application.*
 
 ```javascript
-var http = require('http'); // library for http
-var fs = require('fs'); // library for filesystem
+const http = require('http'); // library for http
+const fs = require('fs'); // library for filesystem
 
-var json = fs.readFileSync('./data.json');
+const json = fs.readFileSync('./data.json');
 
-http.createServer(function(request, response){
+http.createServer((request, response) => {
   response.writeHead(200);
   response.write(json);
   response.end();
@@ -48,12 +48,12 @@ console.log('api server is ready');
 *This example assumes that an index.html file is in the same directory as our application.*
 
 ```javascript
-var http = require('http');
-var fs = require('fs'); // file system access!
+const http = require('http');
+const fs = require('fs'); // file system access!
 
-var html = fs.readFileSync('./index.html');
+const html = fs.readFileSync('./index.html');
 
-http.createServer(function(request, response) {
+http.createServer((request, response) => {
   response.writeHead(200);
   response.write(html);
   response.end();
