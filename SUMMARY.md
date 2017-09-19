@@ -33,6 +33,6 @@
   * [disney array lab](02_front_end/wednesday_homework.md)
   * [layout challenge](02_front_end/cssChallenge.md)
   * [fellowShip](03_intermediate_front_end/fellowshipHomework.md)
-
+  * [fellowship answers](02_front_end/FellowShipAnswers.md)
 
 
