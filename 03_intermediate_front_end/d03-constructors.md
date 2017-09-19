@@ -9,7 +9,7 @@ Constructors are blueprints to create objects. We define a function that accepts
 ```javascript
 // the giver (todo: read)
 
-function person(name, age, fact) {
+person(name, age, fact) => {
 
   // assign properties to an object
   this.name = name;
@@ -24,7 +24,7 @@ function person(name, age, fact) {
 // it creates an object
 // a constructor is a blueprint to construct an object
 // speeds, colour, size, price, brand
-function bike(speeds, colour, size, price, brand) {
+bike(speeds, colour, size, price, brand) => {
 
   // attributes
   this.speeds = speeds;
@@ -34,7 +34,7 @@ function bike(speeds, colour, size, price, brand) {
   this.brand = brand;
 
   // abilities
-  this.toString = function() {
+  this.toString = () => {
     return 'This bike has ' + this.speeds + ' and is ' + this.colour;
   }
 
@@ -42,8 +42,8 @@ function bike(speeds, colour, size, price, brand) {
 // declare a variable called annasBike
 // create a 'new' INSTANCE of 'bike'
 // create a new copy of bike
-var annasBike = new bike(21, 'teal', 'small', 350, 'diamondback');
+const annasBike = new bike(21, 'teal', 'small', 350, 'diamondback');
 annasBike.toString();
-var jamesBike = new bike(6, 'white', 'medium', 200, 'biria');
+const jamesBike = new bike(6, 'white', 'medium', 200, 'biria');
 jamesBike.toString();
 ```

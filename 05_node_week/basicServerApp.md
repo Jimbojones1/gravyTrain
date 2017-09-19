@@ -1,5 +1,5 @@
 ```
-var express = require('express'),
+const express = require('express'),
     app     = express(),
     server  = require('http').createServer(app),
     handlebars = require('express-handlebars');
@@ -10,19 +10,19 @@ var express = require('express'),
   // tellin express were using handlebars
   app.set('view engine', 'hbs');
 
-  app.get('/', function(request, response){
+  app.get('/', (request, response) => {
     // request object is from the client,
     // the response is what were sending back
     response.send('Hey I just built a serverrrrr')
   })
 
-  app.get('/blueberries', function(req, res){
+  app.get('/blueberries', (req, res) => {
     res.send('i like blueberries')
   })
 
 
 // first argument is the port number
-server.listen(3000, function(){
+server.listen(3000, () => {
   console.log('server is listening on port 3000')
 })
 

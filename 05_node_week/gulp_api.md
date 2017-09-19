@@ -5,7 +5,7 @@
 *NOTE: For the sake of example, we're going to assume we've created a `gulpfile.js` and set up the basic boilerplate. Assume for the rest of these notes that we are writing the code within a file that is set up like this:
 
 ```js
-var gulp = require('gulp');
+const gulp = require('gulp');
 
 // Your Gulp tasks and workflow
 // are defined here. Assume all the
@@ -13,7 +13,7 @@ var gulp = require('gulp');
 // space.
 
 // Assume a default task is defined last
-gulp.task('default', function() {
+gulp.task('default', () => {
   // Default task body defined here...
 });
 ```
@@ -25,7 +25,7 @@ Gulp has a method called `task` that takes 2 arguments: the task name as a strin
 __Example__
 
 ```js
-var less = require('gulp-less'); // Require a plugin that makes transpiling less easier
+const less = require('gulp-less'); // Require a plugin that makes transpiling less easier
 
 // less
 // ----
@@ -34,7 +34,7 @@ var less = require('gulp-less'); // Require a plugin that makes transpiling less
 // transforms it into the main `style.css` file.
 //
 // Usage: Run `gulp less`
-gulp.task('less', function() {
+gulp.task('less', () => {
   gulp.src('./public/less/style.less')
     .pipe(less())
     .pipe(gulp.dest('./public/css/style.css'));
@@ -75,18 +75,18 @@ Creating workflow tasks is easy! You simply start by defining a named task using
 
 ```js
 // First you define the tasks you'll need in your workflow
-gulp.task('less', function() {
+gulp.task('less', () => {
   // task body goes here...
   // LESS turns into CSS at the end of it
 });
 
-gulp.task('jshint', function() {
+gulp.task('jshint', () => {
   // task body here...
   // you would run a JS linter here
   // More info on what a linter is: http://www.javascriptlint.com
 });
 
-gulp.task('minify', function() {
+gulp.task('minify', () => {
   // task body goes here...
   // code to minify one or more JS
   // files goes here..
@@ -107,24 +107,24 @@ __Example__
 In this example we run a local web server and watch for changes to LESS files and automatically convert them into CSS files without having to manually run any gulp tasks. Let's assume we've already created the tasks needed to compile the LESS files, optimize our JavaScript (using linting and minification), and run a local server all at once. Let's suppose we've called those tasks `less`, `minify`, `jshint`,  and `server`.
 
 ```js
-var gls = require('gulp-live-server');
+const gls = require('gulp-live-server');
 
 // Server task
 // -----------
 // Starts a local web server at http://localhost:9000
 // Run a local server
-gulp.task('server', function() {
-  var server = gls('./server/app.js');
+gulp.task('server', () => {
+  const server = gls('./server/app.js');
   server.start();
 
   // Reload the server on changes to back-end file changes
-  gulp.watch(['./gulpfile.js', './server/app.js', './server/{config,controllers,middleware,models}/**/*.js'], function() {
+  gulp.watch(['./gulpfile.js', './server/app.js', './server/{config,controllers,middleware,models}/**/*.js'], () => {
     server.start.bind(server)()
   });
 });
 
 // Watch task
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   gulp.watch(['./public/less/**/*.less'], ['less']);
   gulp.watch(['./public/js/**/*.js', './server/{controllers,models,lib}/**/*.js'], ['jshint', 'minify']);
 });
