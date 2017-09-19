@@ -32,6 +32,7 @@
 * [DOM](02_front_end/selector.md)
   * [disney array lab](02_front_end/wednesday_homework.md)
   * [layout challenge](02_front_end/cssChallenge.md)
+  * [fellowShip](02_front_end/fellowshipHomework.md)
 
 
 
