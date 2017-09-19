@@ -11,7 +11,7 @@ Remember that when building a function, you want to use **declare** a function w
 ```
 // declare function named "lengths"
 // that accepts a arguments named "arrayOfStrings"
-function lengths(arrayOfStrings) {
+lengths(arrayOfStrings) => {
 
   // we can log out our "arrayOfStrings"
   console.log(arrayOfStrings);
@@ -26,7 +26,7 @@ function lengths(arrayOfStrings) {
 - Reference: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length" target="_blank">MDN: String.length</a>
 
 ```javascript
-var words = ["hello", "what", "is", "up", "dude"]
+const words = ["hello", "what", "is", "up", "dude"]
 lengths(words)  # => [5, 4, 2, 2, 4]
 ```
 
@@ -126,16 +126,16 @@ repMaster("I finished this practice", toUpperCase);
 Note that a function can be used as an argument for a function! Inside of the function, you just need to **call** it. Example:
 
 ```
-function logSomething(string) {
+logSomething(string) => {
 
   console.log(string);
 
 }
 
-function doSomethingWithFunctions(yourFunction) {
+doSomethingWithFunctions(yourFunction) => {
 
   // you 'call' yourFunction
-  var someString = "hey, you're going to log me";
+  const someString = "hey, you're going to log me";
   return yourFunction(someString);
 
 }

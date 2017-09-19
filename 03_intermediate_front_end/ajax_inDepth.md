@@ -36,15 +36,15 @@ $.ajax({
 
 I can refer to that argument as a variable for ease of use
 ```javascript
-var ajaxArgument = {
+const ajaxArgument = {
   type: 'get',
   url: 'http://api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=1111111111',
   dataType: 'json',
-  success: function(data) {
+  success: (data) => {
     console.log("success");
     console.log(data);
   },
-  error: function(error) {
+  error: (error) => {
     console.log("error")
     console.log(error);
   }
@@ -56,10 +56,10 @@ $.ajax(ajaxArgument);
 I can also call .done and .fail if I prefer to chain methods...
 ```javascript
 // or...
-$.ajax(ajaxArgument).done(function(data) {
+$.ajax(ajaxArgument).done((data) => {
   console.log(data);
 });
-$.ajax(ajaxArgument).fail(function(error) {
+$.ajax(ajaxArgument).fail((error) => {
   console.log(error);
 });
 ```
@@ -74,13 +74,13 @@ $.ajax({
   type: 'get',
   url: 'http://imperialholonet.herokuapp.com',
   dataType: 'json',
-  success: function(data) { // data is the data from our server
+  success: (data) => { // data is the data from our server
     console.log(data);
     // some code to success message!
     $('.success').show(); // <div class="success">....
     $('.spinner').hide(); // <div class="spinner">....
   },
-  error: function(error) {
+  error: (error) => {
     console.log(error);
     // some error code...
     $('.wompwomp').show(); // <div class="wompwomp">....
@@ -94,12 +94,12 @@ What is this `.done()` anyways?
 // using .done()
 // only should be used when you own the server for the API
 // not if you rely on someone else for data!
-var ajaxArgument = {
+const ajaxArgument = {
   type: 'get',
   url: 'http://api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=1111111111',
   dataType: 'json'
 };
-$.ajax(ajaxArgument).done(function(data) {
+$.ajax(ajaxArgument).done((data) => {
   console.log('whoa now, we\'re done..');
   console.log(data);
 });
@@ -110,7 +110,7 @@ We can also shorthand Ajax **GET** requests...
 ```javascript
 // what about... .getJSON?
 // shorthand 'GET' request method
-$.getJSON("url", function(data) {
+$.getJSON("url", (data) => {
     // do stuff with your data
     console.log(data);
 });
@@ -121,19 +121,19 @@ Now, let's take a look at what a *closure* is...
 ```javascript
 // closure is a way to access data inside of a
 // scope that no longer exists
-var ajaxArgument = {
+const ajaxArgument = {
   type: 'get',
   url: 'http://api.openweathermap.org/data/2.5/forecast/city?id=524901&APPID=1111111111',
   dataType: 'json',
-  success: function(data) {
+  success: (data) => {
     console.log("success");
     console.log(data);
   },
-  error: function(error) {
+  error: (error) => {
     console.log("error")
     console.log(error);
   }
 };
-var oldAjax = $.ajax(ajaxArgument); // assign ajax to
+const oldAjax = $.ajax(ajaxArgument); // assign ajax to
 console.log(oldAjax.responseJSON); // closure data
 ```

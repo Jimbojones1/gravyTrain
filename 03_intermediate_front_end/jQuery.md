@@ -72,7 +72,7 @@
 #### Trigger and listen to events
 
 ```javascript
-$(selector).click(function() {
+$(selector).click(() => {
   // your code
 });
 ```

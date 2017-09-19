@@ -37,7 +37,7 @@ $.ajax({
   url: 'http://www.omdbapi.com/?t=Star+Wars&y=&plot=short&r=json',
   type: "GET",
   dataType: 'json',
-  success: function(data) {
+  success: (data) => {
     $('body').append(data.Title + " was released in " + data.Year + "<hr><br>");
   }
 });
@@ -49,13 +49,13 @@ $.ajax({
   url: 'http://shakeitspeare.com/api/poem',
   type: "GET",
   dataType: 'json',
-  success: function(data) {
+  success: (data) => {
     const data = data;
     //console.log(data);
     $('body').append(data.poem);
     //alert("huzzah! we did it guys!");
   },
-  fail: function(error) {
+  fail: (error) => {
     console.log(error);
   }
 });
