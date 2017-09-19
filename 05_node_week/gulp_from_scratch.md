@@ -37,9 +37,9 @@ __Setting up Gulp tasks__
 A basic Gulpfile looks like this:
 
 ```js
-var gulp = require('gulp');
+const gulp = require('gulp');
 
-gulp.task('default', function() {
+gulp.task('default', () => {
   // your default task is a special task.
   // it gets run whenever you run "gulp" with
   // no other arguments on the command line.

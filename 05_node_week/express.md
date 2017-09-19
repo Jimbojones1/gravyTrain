@@ -118,25 +118,25 @@ The basic structure of a Gulpfile is as follows:
 
 ```js
 // Require deps
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     less = require('gulp-;ess');
 // Additional Gulp plugins can be required here
 
 // Define a task to transpile LESS to CSS
-gulp.task('less', function() {
+gulp.task('less', () => {
   gulp.src('./src/public/less/style.less') // 1. Get file contents
     .pipe(less())                          // 2. Pipe contents of style.less into the `less` plugin
     .pipe(gulp.dest('./src/public/css'));  // 3. Pipe the output of the `less` plugin function to a final destination file
 });
 
 // Gulp example task using plain old JS code
-gulp.task('example', function() {
+gulp.task('example', () => {
   console.log('The example task has run!');
 });
 
 
 // Watch task - runs other tasks when files change
-gulp.task('watch', function() {
+gulp.task('watch', () => {
   gulp.watch(['./src/public/less/**/*/.less'], ['less']);
   // Other files can be watched by Gulp and tasks run bsed on
   // when they change. For example, you can lint and minify JS files
