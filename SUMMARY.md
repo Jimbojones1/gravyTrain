@@ -35,5 +35,6 @@
   * [fellowShip](03_intermediate_front_end/fellowshipHomework.md)
   * [fellowship answers](02_front_end/FellowShipAnswers.md)
   * [Classes Notes](02_front_end/ClassesAndFactories.md)
+  * [PokeAsquare Notes](02_front_end/pokeAsquareNotes.md)
 
 
