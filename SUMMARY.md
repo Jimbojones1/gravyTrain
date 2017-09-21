@@ -34,5 +34,6 @@
   * [layout challenge](02_front_end/cssChallenge.md)
   * [fellowShip](03_intermediate_front_end/fellowshipHomework.md)
   * [fellowship answers](02_front_end/FellowShipAnswers.md)
+  * [Classes Notes](02_front_end/ClassesAndFactories.md)
 
 
