@@ -72,7 +72,8 @@
 #### Trigger and listen to events
 
 ```javascript
-$(selector).click(() => {
+$(selector).click((e) => {
+    // e.currenTarget will give you the element you are selecting
   // your code
 });
 ```

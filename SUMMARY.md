@@ -37,5 +37,7 @@
   * [Classes Notes](02_front_end/ClassesAndFactories.md)
   * [PokeAsquare Notes](02_front_end/pokeAsquareNotes.md)
   * [Homework Calculator](02_front_end/calculatorHomework.md)
+  * [Jquery](03_intermediate_front_end/jQuery.md)
+* [Tomagotchi Mini Project](02_front_end/tomagotchi.md)
 
 

@@ -6,6 +6,9 @@
 Let's use our front-end web development skills to create a "living" pet! We'll use HTML, CSS, and Javascript to interact with our pet.
 
 ### Requirements
+- Create a repo for your tomagotchi pet
+- make a commit after you finish each one of the following
+
 
 - Display a character of your choice on the screen to represent your pet
 - Display the following metrics for your pet. Hunger (1-10 scale), Sleepiness (1-10 scale), Boredom (1-10 scale), Age
