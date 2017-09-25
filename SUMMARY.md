@@ -39,5 +39,7 @@
   * [Homework Calculator](02_front_end/calculatorHomework.md)
   * [Jquery](03_intermediate_front_end/jQuery.md)
 * [Tomagotchi Mini Project](02_front_end/tomagotchi.md)
+* [AJAX](03_intermediate_front_end/ajax.md)
+  * [ajax in depth](03_intermediate_front_end/ajax_inDepth.md)
 
 
