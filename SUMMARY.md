@@ -42,6 +42,6 @@
 * [AJAX](03_intermediate_front_end/ajax.md)
   * [ajax in depth](03_intermediate_front_end/ajax_inDepth.md)
 * [Project one](03_intermediate_front_end/projectGame.md)
-* [Wireframes and User Stories](03_intermediate/wireframe.md)
+* [Wireframes and User Stories](03_intermediate_front_end/wireframe.md)
 
 
