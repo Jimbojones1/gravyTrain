@@ -43,5 +43,9 @@
   * [ajax in depth](03_intermediate_front_end/ajax_inDepth.md)
 * [Project one](03_intermediate_front_end/projectGame.md)
 * [Wireframes and User Stories](03_intermediate_front_end/wireframe.md)
-
+* [Node/Express](04_Node/intro_to_node.md)
+  * [Internet](04_Node/internet.md)
+* [less](05_node_week/less.md)
+* [Gulp](05_node_week/gulp_from_scratch.md)
+  * [Gulp Api](05_node_week/gulp_api.md)
 
