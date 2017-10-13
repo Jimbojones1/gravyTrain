@@ -1,7 +1,7 @@
 ## Mongoose Model Example
 
 ```javascript
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
 // declare a scheme (schema) for a model
 // mongoose schema data types:
@@ -15,7 +15,7 @@ var mongoose = require('mongoose');
 // Array (arrays must contain data of the same type!)
 // ObjectId (_id) - unique GUID or ID associated with your new model
 
-var TaskSchema = new mongoose.Schema({
+const TaskSchema = new mongoose.Schema({
   name: String,
   completed: Boolean,
   description: String,

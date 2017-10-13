@@ -14,7 +14,7 @@ Now, create a new folder in your project called `models`. Then, create a file ca
 **Connect to Mongo using Mongoose**
 ```javascript
 // mongodb://username:password@localhost:27027/database-name
-var connectionString = 'mongodb://localhost/test';
+const connectionString = 'mongodb://localhost/test';
 
 // connect to database
 mongoose.connect(connectionString);
@@ -85,9 +85,9 @@ We can use the `mongoose.Schema({});` method to create a schema.
 
 ```javascript
 // require mongoose
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var TaskSchema = new mongoose.Schema({
+const TaskSchema = new mongoose.Schema({
   name: String,
   description: String,
   completed: Boolean
@@ -97,9 +97,9 @@ Notice how we're declaring the *type* of data stored in the object. Say we want 
 
 ```javascript
 // require mongoose
-var mongoose = require('mongoose');
+const mongoose = require('mongoose');
 
-var TaskSchema = new mongoose.Schema({
+const TaskSchema = new mongoose.Schema({
   name: String,
   description: String,
   completed: {type: Boolean, "default": false }
@@ -112,7 +112,7 @@ We put the word `default` in quotes because it is a reserved word in Javascript.
 
 Finally, to make our actual MVC-esque **model**, we need to tell Mongoose to create a model:
 
-`var Task = mongoose.model('Task', TaskSchema);`
+`const Task = mongoose.model('Task', TaskSchema);`
 Where we declare `Task` as the new model name and assign a schema to this model.
 
 ## 5. Mongoose Query Methods
@@ -126,8 +126,8 @@ Where we declare `Task` as the new model name and assign a schema to this model.
 ## 6. MongoDB CRUD
 
 ```javascript
-var mongoose = require('mongoose');
-var Task = require('../models/Tasks');
+const mongoose = require('mongoose');
+const Task = require('../models/Tasks');
 
 // get ALL items in an array
 Task.find(function (err, tasks) {
@@ -182,10 +182,10 @@ The solution to both of these issues were solved by creating additional fields i
 So if your schema definition looks like this:
 
 ```js
-var mongoose = require('mongoose'); // Require Mongoose library
+const mongoose = require('mongoose'); // Require Mongoose library
 
 // Create a new schema for the User model
-var UserSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
   username: String,
   password: String,
   age:      Number
@@ -197,7 +197,7 @@ module.exports = mongoose.model('User', UserSchema);
 ...and the data you want to save looks like this:
 
 ```js
-var newUser = {
+const newUser = {
   username: 'Willy',
   password: 12345,
   age:      29,
@@ -219,7 +219,7 @@ This is how to create a schema not in strict mode:
 
 ```js
 // models/user.js
-var UserSchema = new mongoose.Schema({
+const UserSchema = new mongoose.Schema({
   username: String,
   password: String,
   age:      Number
@@ -235,22 +235,22 @@ Notice the second object that was passed to the `.Schema` method. Again, here's 
 ```js
 // models/user.js
 // --------------
-var mongoose = require('mongoose'); // Require Mongoose library
+const mongoose = require('mongoose'); // Require Mongoose library
 
 // The schema object
-var schema = {
+const schema = {
   username: String,
   password: String,
   age:      Number
 };
 
 // The options object
-var schemaOpts = {
+const schemaOpts = {
   strict: false
 };
 
 // Creating a new schema for the User model
-var UserSchema = new mongoose.Schema(schema, schemaOpts);
+const UserSchema = new mongoose.Schema(schema, schemaOpts);
 
 // Create the User model
 module.exports = mongoose.model('User', UserSchema);

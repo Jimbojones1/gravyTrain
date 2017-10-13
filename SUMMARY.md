@@ -45,7 +45,12 @@
 * [Wireframes and User Stories](03_intermediate_front_end/wireframe.md)
 * [Node/Express](04_Node/intro_to_node.md)
   * [Internet](04_Node/internet.md)
+  * [Basic Server](05_node_week/basicServerApp.md)
 * [less](05_node_week/less.md)
 * [Gulp](05_node_week/gulp_from_scratch.md)
   * [Gulp Api](05_node_week/gulp_api.md)
+* [Mongo DD](05_node_week/mongodb.md)
+* [Mongoose](06_Express_Models/mongoose.md)
+  * [MongooseSchema](06_Express_Models/mongooseSchema.md)
+* [SQL vs noSQL](06_Express_Models/databases.md)
 

@@ -119,7 +119,7 @@ The basic structure of a Gulpfile is as follows:
 ```js
 // Require deps
 const gulp = require('gulp'),
-    less = require('gulp-;ess');
+    less = require('gulp-less');
 // Additional Gulp plugins can be required here
 
 // Define a task to transpile LESS to CSS

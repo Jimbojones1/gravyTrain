@@ -15,8 +15,8 @@ Inside of your `app.js`, we're going to...
 
 ```javascript
 // require express and use it
-var express = require('express');
-var app = express();
+const express = require('express');
+const app = express();
 
 // create some JSON to send to a user
 var data = {
@@ -177,7 +177,7 @@ app.set('view engine', 'ejs');
 
 ```javascript
 // include the path reader... we need this to read files
-var path = require('path');
+const path = require('path');
 
 // view engine setup
 // set to look for views inside of "/views"
