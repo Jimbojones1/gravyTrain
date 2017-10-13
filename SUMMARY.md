@@ -49,9 +49,9 @@
 * [less](05_node_week/less.md)
 * [Gulp](05_node_week/gulp_from_scratch.md)
   * [Gulp Api](05_node_week/gulp_api.md)
-* [Mongo DD](05_node_week/mongodb.md)
+* [Mongo DB](06_Express_Models/mongodb.md)
 * [Mongoose](06_Express_Models/mongoose.md)
   * [MongooseSchema](06_Express_Models/mongooseSchema.md)
 * [SQL vs noSQL](06_Express_Models/databases.md)
-* [Crud App Hw](06_Express_Models/RestfulApp.md)
+* [Crud App Hw](05_node_week/RestfulApp.md)
 
