@@ -1,11 +1,13 @@
 ## Groups
 
-1. Payne - Greg
+1. Mat - Stephen
 
-2. Jackson - David
+2. Jeff - Collin
 
-3. Julian - Lindsey
+3. Tom - Sam
 
-4. Benn - Sam
+4. Daniel - Andrew
 
-5. Ayo - Annie
+5. Gio - Cullin
+
+6. Todd - Myka

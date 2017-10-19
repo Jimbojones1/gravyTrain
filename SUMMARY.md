@@ -54,4 +54,6 @@
   * [MongooseSchema](06_Express_Models/mongooseSchema.md)
 * [SQL vs noSQL](06_Express_Models/databases.md)
 * [Crud App Hw](05_node_week/RestfulApp.md)
+* [Project 2 FullStack Node](06_Express_Models/Project2.md)
+  * [Project Groups](06_Express_Models/projectGroups.md)
 
