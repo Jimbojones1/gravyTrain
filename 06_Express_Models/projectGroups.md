@@ -8,6 +8,6 @@
 
 4. Daniel - Andrew
 
-5. Gio - Cullin
+5. Gio - Cullen
 
 6. Todd - Myka
