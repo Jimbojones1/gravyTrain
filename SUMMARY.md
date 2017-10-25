@@ -56,4 +56,5 @@
 * [Crud App Hw](05_node_week/RestfulApp.md)
 * [Project 2 FullStack Node](06_Express_Models/Project2.md)
   * [Project Groups](06_Express_Models/projectGroups.md)
+  * [Heroku Deployment With Mongo](06_Express_Models/heroku.md)
 
