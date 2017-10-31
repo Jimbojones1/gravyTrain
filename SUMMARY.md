@@ -57,4 +57,9 @@
 * [Project 2 FullStack Node](06_Express_Models/Project2.md)
   * [Project Groups](06_Express_Models/projectGroups.md)
   * [Heroku Deployment With Mongo](06_Express_Models/heroku.md)
+* [Ruby](08_ruby_sinatra/monday.md)
+  * [string array hash](08_ruby_sinatra/d01_string_array_hash.md)
+  * [enumeration](08_ruby_sinatra/d01_enumeration.md)
+  * [methods](08_ruby_sinatra/d01_methods)
+  * [Reps recap](08_ruby_sinatra/rupsRecap.md)
 

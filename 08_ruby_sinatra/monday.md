@@ -122,6 +122,4 @@ For all blocks, you can turn them into one-liners. If your block has only a sing
 student.each do { |key, val| puts "#{key} is #{val}" }
 ```
 
-# Homework
 
-Your homework can be found in [the homework repository](https://github.com/ga-chicago/wdi5-homework) for week 8. As always, create a new folder named after yourself in this week and day's homework folder.
