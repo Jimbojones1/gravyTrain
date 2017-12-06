@@ -62,4 +62,7 @@
   * [enumeration](08_ruby_sinatra/d01_enumeration.md)
   * [methods](08_ruby_sinatra/d01_methods)
   * [Reps recap](08_ruby_sinatra/rupsRecap.md)
+  * [Sinatra Route Map](08_ruby_sinatra/routing.md)
+  * [mapping routes](08_ruby_sinatra/mappingRoutes.md)
+* [Rails](08_ruby_sinatra/rail.md)
 
