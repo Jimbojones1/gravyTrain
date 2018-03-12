@@ -29,7 +29,7 @@ PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 - In a new terminal tab, navigate to the root of your hard drive using `cd /`
 - `cd` into the `Applications` directory
 - `ls -l` to list all of your Applications
-- Copy the application name to a blank text file (such as `/Applications/WebStorm.app`)
+- Copy the application name to a blank text file (such as `/Applications/Sublime.app`)
 - Repeat for each app
 
 ##### Adding Aliases
