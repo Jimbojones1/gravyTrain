@@ -27,7 +27,7 @@ PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 > **Apps** - you should find Safari, Chrome, Sublime Text, and WebStorm. Additionally, you may find Atom and any other editor/browser you like.
 
 - In a new terminal tab, navigate to the root of your hard drive using `cd /`
-- `cd` into the `Applications` directory
+- `cd` into the `Applications` directory (Note some of you will have the Applications in the root Applications folder, while some of you will have it in your `username/Applications`, remember you can use `pwd` to find out where you are.
 - `ls -l` to list all of your Applications
 - Copy the application name to a blank text file (such as `/Applications/Sublime.app`)
 - Repeat for each app
@@ -35,7 +35,7 @@ PATH="/usr/local/bin:/usr/local/sbin:$PATH"
 ##### Adding Aliases
 
 - At the **end** of your `.bash_profile` file, you may add an alias. You'll need the exact path of your apps to do so.
-- You can add an alias by assigning a _command_ like so: `alias ws='open -a /Applications/WebStorm.app'`
+- You can add an alias by assigning a _command_ like so: `alias ws='open -a /Applications/Atom.app'` (Note yours may be different make sure you are printing your workind directory to get the correct file path)
 - Here are the aliases you should use for each app:
   * `subl` for Sublime Text
   * `safari` for Safari
